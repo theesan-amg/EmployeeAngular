@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Liste des employés</h2>
+  <button class="btn btn-outline-primary"  routerLink="/employee-create">Ajouter un employé</button>
+  <ul>
+    <li *ngFor="let employee of employees">
+      {{ employee.firstName }} {{ employee.lastName }} - {{ employee.email }}
+      <button class="btn btn-warning" (click)="editEmployee(employee)">Modifier</button>
+      <button class="btn btn-danger"  (click)="deleteEmployee(employee)">Supprimer</button>
+    </li>
+  </ul>
+</div>

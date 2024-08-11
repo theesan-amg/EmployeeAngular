@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Créer un employé</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="firstName">Prénom :</label>
+    <input id="firstName" [(ngModel)]="employee.firstName" name="firstName" type="text">
+    <br>
+    <label for="lastName">Nom :</label>
+    <input id="lastName" [(ngModel)]="employee.lastName" name="lastName" type="text">
+    <br>
+    <label for="email">Email :</label>
+    <input id="email" [(ngModel)]="employee.email" name="email" type="email">
+    <br>
+    <button class="btn btn-outline-success"  type="submit">Créer</button>
+  </form>
+</div>

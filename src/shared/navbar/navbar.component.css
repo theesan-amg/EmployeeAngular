@@ -1,0 +1,17 @@
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+
+}
+li{
+  list-style-type: none;
+}
+
+nav {
+  margin:2%;
+}
+a{
+  text-decoration: none;
+
+}
